@@ -1,0 +1,49 @@
+#left-ear {
+  transform-origin: 100px 100px;
+  transition: all .5s linear;
+}
+
+#right-ear {
+  transform-origin: 100px 100px;
+  transition: all .5s linear;
+}
+
+#left-eye {
+  transform-origin: 100px 100px;
+  transition: all .5s linear;
+  animation: shifty 3s linear infinite;
+}
+
+#right-eye {
+  transform-origin: 100px 100px;
+  transition: all .5s linear;
+  animation: shifty 3s linear infinite;
+}
+
+#bear:hover #left-ear {
+  transform: translate(0, -1em);
+}
+
+#bear:hover #right-ear {
+  transform: translate(0, -1em);
+}
+
+@keyframes shifty {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  40% {
+    transform: translateX(-1em);
+  }
+
+  80% {
+    transform: translateX(1em);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
